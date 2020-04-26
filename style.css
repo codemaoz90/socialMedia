@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(230, 17%, 14%);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #fff;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
 /* Switch checkbox */
 input[type="checkbox"] {
   height: 0;
@@ -31,4 +50,56 @@ input:checked + label {
 input:checked + label:before {
   left: calc(100% - 5px);
   transform: translateX(-100%);
+}
+.section_1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header_div h1 {
+  margin-bottom: 0px;
+}
+.header_div p {
+  margin-top: 0px;
+}
+.button_div {
+  display: flex;
+  align-items: center;
+}
+.section_2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section_2 > div {
+  width: 200px;
+  height: 150px;
+  border: 1px solid gray;
+  margin-right: 0;
+  border-radius: 5px;
+}
+.social_facebook p {
+  margin: 0px;
+  height: 3px;
+  background-color: hsl(195, 100%, 50%);
+}
+.social_twitter p {
+  margin: 0px;
+  height: 3px;
+  background-color: hsl(203, 89%, 53%);
+}
+.social_instagram p {
+  margin: 0px;
+  height: 3px;
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+}
+
+.social_youtube p {
+  margin: 0px;
+  height: 3px;
+  background-color: hsl(348, 97%, 39%);
 }
